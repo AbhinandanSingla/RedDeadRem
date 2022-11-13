@@ -605,3 +605,71 @@ html {
     width: 100%;
     height: 30rem;
 }
+
+.multiplayerContainer {
+    margin-top: 5rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.multiplayerContainer div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 45rem;
+}
+
+.multiplayerContainer .f_text {
+    text-align: left;
+}
+
+.plusContainer {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/*.plusContainer figure {*/
+/*    width: 30rem;*/
+/*}*/
+
+.plusContainer figure img {
+    width: 100%;
+}
+
+.coopContainer div {
+    width: 28rem;
+}
+
+.skullContainer {
+    width: 30rem;
+}
+
+.skullContainer svg {
+    width: 100%;
+}
+
+.skullContainer svg g {
+    display: none;
+}
+
+
+#mainDeer:hover {
+    transition: all 800ms ease-in-out;
+
+    transform: translateY(-20px);
+
+}
+
+#leftSkull:hover, #rightSkull:hover, #centerSkull:hover, #mainCircle:hover {
+    transition: all 800ms ease-out;
+    transform: scale(1.05);
+}
+
+#Group45:hover, #DownRightArrow:hover {
+    transition: all 800ms ease-in-out;
+    transform: translateY(20px);
+}
+

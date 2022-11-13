@@ -8,5 +8,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Glide.js" level="application" />
+    <orderEntry type="library" name="gsap" level="application" />
   </component>
 </module>
