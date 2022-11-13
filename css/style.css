@@ -206,7 +206,7 @@ html {
 /*    padding-top: 2rem;*/
 /*}*/
 .buyBtn {
-    margin-top: 1rem;
+    margin-top: 2rem;
     display: inline-block;
     padding: 1.2rem 4rem;
     background: var(--orange);
@@ -665,6 +665,7 @@ html {
 
 #leftSkull:hover, #rightSkull:hover, #centerSkull:hover, #mainCircle:hover {
     transition: all 800ms ease-out;
+    transform-origin: center !important;
     transform: scale(1.05);
 }
 
