@@ -25,10 +25,36 @@
                 <li class="nav"><a class="active" href="../pages/buyNow.html">Buy now</a></li>
             </ul>
         </div>
-        <div class="logincontainer">
-            <div class="loginbtn"> Login</div>
+        <div class="mobileContainer">
+            <div class="mobileBar"> Buy Now</div>
+            <svg class="mobileSvg" width="33" height="33" viewBox="0 0 33 33" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_160_96" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="33"
+                      height="33">
+                    <rect width="33" height="33" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_160_96)">
+                    <path d="M4.125 23.375V20.625H23.375V23.375H4.125ZM6.875 17.875V15.125H26.125V17.875H6.875ZM9.625 12.375V9.625H28.875V12.375H9.625Z"
+                          fill="#E58D27"/>
+                </g>
+            </svg>
         </div>
+
     </div>
+</div>
+<div class="mobileNav">
+    <div class="close" id="close">
+        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.901977 14.6738L6.80411 8.77164L0.901977 2.86951L2.86935 0.90213L8.77148 6.80426L14.6736 0.90213L16.641 2.86951L10.7389 8.77164L16.641 14.6738L14.6736 16.6411L8.77148 10.739L2.86935 16.6411L0.901977 14.6738Z"
+                  fill="#E58D27"/>
+        </svg>
+    </div>
+    <ul class="mobileContainerUl">
+        <li class="nav"><a href="/">Home</a></li>
+        <li class="nav"><a href="../pages/feature.html">Features</a></li>
+        <li class="nav"><a href="../pages/dlc.html">DLC</a></li>
+        <li class="nav active"><a href="../pages/buyNow.html">Buy Now</a></li>
+    </ul>
 </div>
 
 <div class="home">
@@ -189,6 +215,7 @@
         </div>
     </div>
 </div>
+<div class="bg"></div>
 <script crossorigin="anonymous"
         integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
         src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
@@ -209,5 +236,9 @@
         imagesRatio: 2 / 5
     })
 </script>
+</script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="../js/script.js"></script>
 </body>
 </html>

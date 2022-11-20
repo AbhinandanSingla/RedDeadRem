@@ -146,33 +146,6 @@ body {
     display: flex;
 }
 
-.logincontainer {
-    padding: 4rem;
-}
-
-.loginbtn {
-    padding: 1.2rem 4rem;
-    background: var(--orange);
-    display: inline;
-    font-family: var(--InconsolataExtraBlack);
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 19px;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 2px #000000;
-    color: #FFFFFF;
-    -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: var(--stroke);
-    /*box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.75);*/
-    animation: pop 600ms forwards;
-}
-
-@keyframes pop {
-    100% {
-        box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.75);
-    }
-}
 
 .homeContent {
     width: 70%;
@@ -659,7 +632,14 @@ body {
     justify-content: center;
 }
 
-.multiplayerContainer div {
+.multiplayerContainer .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 45rem;
+}
+
+.multiplayerSubContainer {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -685,7 +665,7 @@ body {
     width: 100%;
 }
 
-.coopContainer div {
+.coopContainer .swiper-slide {
     width: 28rem;
 }
 
@@ -767,13 +747,67 @@ body {
     }
 }
 
+.mobileContainer {
+    display: none;
+}
+
+.mobileNav {
+    display: none;
+}
+
 @media (max-width: 760px) {
+    .homeContent .container {
+        flex-direction: column;
+    }
+
+    .buy_now-container {
+        width: 100%;
+    }
+
+    .game_description_container {
+        width: 100%;
+    }
+
+    .videoContainer{
+        gap: 0;
+    }
+    .home_information {
+        margin-top: 2rem;
+        display: block;
+    }
+
+    .mobileContainer {
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .mobileBar {
+        padding-right: 2rem;
+        font-family: var(--InconsolataExtraBlack);
+        font-style: normal;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: #E58D27;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    }
+
     .locationContainer_dlc {
         margin-top: 3rem;
     }
 
     .home .h_heading {
-        padding: 0 4rem;
+        padding: 4rem 4rem;
+    }
+
+    .nav_container {
+        display: none;
+    }
+
+    .nav_logo img {
+        width: 8rem;
     }
 
     .featureInformationContainer {
@@ -788,8 +822,99 @@ body {
     .featureTitle img {
         width: 100%;
     }
-    .multiplayerContainer{
+
+    .multiplayerContainer {
         flex-direction: column;
         align-items: center;
+    }
+
+    .multiplayerContainer .swiper-slide {
+        align-items: center;
+    }
+}
+
+.mobileNav {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: url("../assets/images/background.png");
+    z-index: 999;
+}
+
+.mobileContainerUl {
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mobileContainerUl .nav a {
+    text-decoration: none;
+    display: block;
+    padding: 2rem 4rem;
+    font-family: var(--InconsolataExtraBlack);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.mobileContainerUl .active a {
+    color: #E58D27;
+}
+
+.mobileNav .close {
+    padding: 4rem;
+}
+
+.m_active {
+    display: none;
+}
+
+@media (max-width: 420px) {
+    .description_container {
+        width: 100%;
+    }
+    .game_description_container {
+        flex-direction: column;
+    }
+    .screenContainer {
+        flex-wrap: wrap;
+
+    }
+    .multiplayerSubContainer figure img {
+        width: 100%;
+    }
+
+    .multiplayerSubContainer {
+        width: 30rem;
+    }
+
+    .roamRow {
+        flex-direction: column;
+    }
+
+    .profileContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headingContainer {
+        display: block;
+        margin-top: 4rem;
+    }
+
+    .homeCarosol canvas {
+        height: 55rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .image_container figure img {
+        width: 100%;
     }
 }
