@@ -752,7 +752,7 @@ body {
 }
 
 .mobileNav {
-    display: none;
+
 }
 
 @media (max-width: 760px) {
@@ -768,9 +768,10 @@ body {
         width: 100%;
     }
 
-    .videoContainer{
+    .videoContainer {
         gap: 0;
     }
+
     .home_information {
         margin-top: 2rem;
         display: block;
@@ -875,16 +876,21 @@ body {
     display: none;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 460px) {
     .description_container {
         width: 100%;
     }
+
     .game_description_container {
         flex-direction: column;
     }
+
     .screenContainer {
         flex-wrap: wrap;
 
+    }
+    .spacer {
+        height: 12rem;
     }
     .multiplayerSubContainer figure img {
         width: 100%;
@@ -911,10 +917,34 @@ body {
     .homeCarosol canvas {
         height: 55rem;
     }
+
+
 }
 
 @media (max-width: 1000px) {
     .image_container figure img {
         width: 100%;
     }
+}
+
+.footer .f_cont {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 6rem;
+}
+
+.footer .ff_cont {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.footer {
+    padding: 5rem;
+    min-height: 50vh;
+    width: 100%;
+    background: #000;
 }
