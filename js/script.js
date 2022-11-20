@@ -17,18 +17,11 @@ $(document).ready(function () {
     $('.verify').click(function () {
         let ver = gsap.timeline();
         localStorage.setItem('age', 'true')
-        ver.to('.slide_bg', {
-            duration: 4,
-            scale: 2,
-            xPercent: -150,
-            ease: "power1.inOut",
-
-        })
         ver.to('.login', {
             xPercent: -150,
             ease: "power1.in",
 
-        }, '-=1')
+        })
 
     })
     if (localStorage.getItem('age') === 'true') {
